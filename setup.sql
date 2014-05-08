@@ -1,0 +1,10 @@
+DROP DATABASE landing_page;
+CREATE DATABASE landing_page;
+USE landing_page;
+
+CREATE TABLE registrants(
+	id INT NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY(id),
+	reg_email VARCHAR(256) UNIQUE NOT NULL,
+	reg_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL
+);
